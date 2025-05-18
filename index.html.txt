@@ -7,15 +7,15 @@
   <style>
     body {
       font-family: 'Georgia', serif;
-      background-color: #fdf6f0;
-      color: #333;
+      background-color: #f9f5f2;
+      color: #2d2d2d;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #2d2d2d;
+      background-color: #403535;
       color: #fff;
-      padding: 1rem;
+      padding: 2rem;
       text-align: center;
     }
     main {
@@ -24,10 +24,11 @@
       padding: 1rem;
     }
     .poem {
-      margin-bottom: 3rem;
+      background: #fff;
+      border-left: 5px solid #bb4444;
       padding: 1rem;
-      border-left: 4px solid #a66;
-      background-color: #fff;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .signature {
       font-style: italic;
@@ -39,19 +40,19 @@
 <body>
   <header>
     <h1>Derinlerden Gelen Şiirler</h1>
-    <p>Yüreğin derinliklerinden dökülen dizeler</p>
+    <p>Kalbinin derinliklerinden dökülen dizeler</p>
   </header>
   <main>
     <section class="poem">
       <h2>Umuda Yakın Bir Yangın</h2>
       <p>
-        Umut göklerden gelen yağmur gibi sağanak sağanak yağdı gönlüme<br>
-        Ve aniden bir kıvılcım yangına döndü kor halde olan umuduma<br>
-        O yangın ki İbrahimi yakmayan ama beni her gün yeniden yakan alev gibi<br>
-        Umut senin gözlerini yeniden görmek kadar değerlidir gönlümde<br>
-        Sen yakamazsan kimse yakamaz o ateşi<br>
-        Umudum sönüyor Nur yüzlü gel artık gönlüme bayram yerine çevir<br>
-        Her gün omuzlarımda taşıdığım o kor bizi birlikte yormadan ısıtsın
+        Umut göklerden gelen yağmur gibi sağanak sağanak yağdı gönlüme.<br>
+        Ve aniden bir kıvılcım yangına döndü kor halde olan umuduma.<br>
+        O yangın ki İbrahimi yakmayan ama beni her gün yeniden yakan alev gibi.<br>
+        Umut, senin gözlerini yeniden görmek kadar değerlidir gönlümde.<br>
+        Sen yakamazsan kimse yakamaz o ateşi.<br>
+        Umudum sönüyor, Nur yüzlü gel artık, gönlümü bayram yerine çevir.<br>
+        Her gün omuzlarımda taşıdığım o kor bizi birlikte yormadan ısıtsın.
       </p>
       <div class="signature">𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.</div>
     </section>
