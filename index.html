@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Derinlerden Gelen Şiirler</title>
   <style>
     body {
@@ -16,55 +17,45 @@
       padding: 0;
     }
 
-    .social-icons {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      z-index: 1000;
-    }
-
-    .social-icons a {
-      margin-left: 10px;
-      display: inline-block;
-    }
-
-    .social-icons img {
-      width: 28px;
-      height: 28px;
-      filter: invert(1);
-      opacity: 0.8;
-      transition: opacity 0.3s;
-    }
-
-    .social-icons img:hover {
-      opacity: 1;
-    }
-
     header {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.6);
       color: #fff;
       padding: 1.5rem;
       text-align: center;
+      position: relative;
+    }
+
+    .social-links {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+    }
+
+    .social-links a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.4rem;
     }
 
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.85);
-      color: #000;
+      background-color: rgba(0, 0, 0, 0.6);
       border-radius: 12px;
     }
 
     .poem-link {
       display: block;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       padding: 1rem;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.9);
       border-left: 4px solid #a66;
       text-decoration: none;
-      color: #333;
+      color: #222;
       transition: background-color 0.3s;
+      border-radius: 8px;
     }
 
     .poem-link:hover {
@@ -76,35 +67,26 @@
       padding: 1rem;
       font-size: 0.9rem;
       color: #ddd;
-      background-color: rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
 <body>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/huseyinnuman/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-    </a>
-    <a href="https://x.com/huseyinnuman" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X">
-    </a>
-  </div>
-
   <header>
     <h1>Derinlerden Gelen Şiirler</h1>
     <p>Kalpten dökülen dizelerle yolculuk</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">📘</a>
+      <a href="https://www.instagram.com/huseyinnuman/" target="_blank">📸</a>
+      <a href="https://x.com/huseyinnuman" target="_blank">𝕏</a>
+    </div>
   </header>
-
   <main>
     <a href="umuda-yakin-bir-yangin.html" class="poem-link">📜 Umuda Yakın Bir Yangın</a>
     <a href="askin-adi.html" class="poem-link">📜 Aşkın Adı</a>
     <a href="sadece-sevdim.html" class="poem-link">📜 Gönül "Sadece Sevdim" Der, Ama Ruh Bazen "Kimene?" Diye Haykırır</a>
     <a href="gonul-boyle-der.html" class="poem-link">📜 Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a>
+    <a href="kalp-susar-şiir.html" class="poem-link">📜 Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a>
   </main>
-
   <footer>
     &copy; 2025 Derinlerden H. N. B.
   </footer>
