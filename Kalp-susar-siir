@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalp Susar Ama Ruh Sessizliğe Dayanamaz</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-image: url('gece-papatya.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      margin: 0;
+      padding: 2rem;
+    }
+    .poem-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      font-family: 'Georgia', serif;
+      line-height: 1.8;
+    }
+    .signature {
+      text-align: right;
+      font-style: italic;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="poem-container">
+    <h1>Kalp Susar Ama Ruh Sessizliğe Dayanamaz</h1>
+    <pre>
+Kalbimle, ruhumla yaşadım seni sessizce,
+Acıdı kalbim, dayandı bu derin sessizliğe.
+Ama ruhum susturulmadı, susturulamazdı,
+Feryat etti, boyun eğmedi zalim kadere.
+
+Derlerdi aşkın acısı tatlıdır diye, inanmazdım,
+Sakince bekledim, ama unutamadım.
+Sen gelmedin... ben geldim sana,
+Sen aldın gülüşlerini, acılarını bıraktın bana.
+
+Ruhumla başladım direnmeye acıya,
+Artık sessizliği bozdum, geliyorum sevdaya.
+Zorlamıyor beni acının gölgesi artık,
+Eğer sen gelmezsen, ölüm gelir bana artık.
+
+Gönlümü verdim, direnmedim sevgine,
+Şimdi geldim, bitsin artık bu karanlık çile.
+Sevmenin en güzeline açtım yüreğimi,
+Sen vermezsen bile, ben severim seni yine.
+    </pre>
+    <div class="signature">
+      — 𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 𝘏. 𝘕. 𝘉.
+    </div>
+  </div>
+</body>
+</html>
