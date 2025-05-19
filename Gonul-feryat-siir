@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-image: url('gece-papatya.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      margin: 0;
+      padding: 2rem;
+    }
+    .poem-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    .signature {
+      text-align: right;
+      margin-top: 2rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="poem-container">
+    <h1>Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</h1>
+    <pre>
+Ruhumun güneşi, gönlümün prensesi,
+Günle doğan, ölümle ayrılan sevgim.
+Aşkın adı: Ruhumun sönmeyen ateşi,
+Son sözüm, sevdamın son durağı sensin.
+
+Aşk ile geldim, kapına sessiz bir çığlıkla,
+Gönlümle ruhumu sundum sana usulca.
+Görsen, yangın yeri olmuş her halim,
+Sen yoksan sönmez ruhumun ateşi.
+
+Sanadır sevgim, sendedir umudum,
+Ruhumla başladım yenmeye iç savaşımı.
+Seni sevdim, huzurumun tek nedeni için,
+Ben ruhumu yendim, sana kaybetmek için.
+    </pre>
+    <div class="signature">Derinlerden H. N. B.</div>
+  </div>
+</body>
+</html>
