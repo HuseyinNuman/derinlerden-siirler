@@ -14,6 +14,34 @@
       background-position: center;
       background-attachment: fixed;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    .footer strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 1rem;
+      color: #fff;
     }
 
     .sidebar {
@@ -38,26 +66,6 @@
       background-color: #f0eae4;
     }
 
-    .poem-list {
-      display: none;
-      margin-top: 15px;
-      background-color: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    }
-
-    .poem-list a {
-      display: block;
-      color: #333;
-      text-decoration: none;
-      margin-bottom: 10px;
-    }
-
-    .poem-list a:hover {
-      text-decoration: underline;
-    }
-
     .social {
       position: fixed;
       top: 20px;
@@ -70,39 +78,30 @@
       text-decoration: none;
       font-size: 1.5rem;
     }
-
-    @media (max-width: 600px) {
-      .poem-button {
-        padding: 8px 16px;
-      }
-    }
   </style>
 </head>
 <body>
-  <!-- Sol üstteki şiirler butonu -->
+  <!-- Sol üstte şiirler butonu -->
   <div class="sidebar">
-    <button class="poem-button" onclick="togglePoems()">📜 Şiirler</button>
-    <div class="poem-list" id="poemList">
-      <a href="umuda-yakin-bir-yangin.html">Umuda Yakın Bir Yangın</a>
-      <a href="askin-adi.html">Aşkın Adı</a>
-      <a href="sadece-sevdim.html">Gönül "Sadece Sevdim" Der, Ama Ruh Bazen "Kimene?" Diye Haykırır</a>
-      <a href="gonul-boyle-der.html">Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a>
-      <a href="kalp-susar-siir.html">Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a>
-    </div>
+    <a href="siirler.html">
+      <button class="poem-button">📜 Şiirler</button>
+    </a>
   </div>
 
-  <!-- Sağ üstte sosyal medya linkleri -->
+  <!-- Sağ üstte sosyal medya -->
   <div class="social">
     <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">🌐</a>
     <a href="https://www.instagram.com/huseyinnuman/" target="_blank">📷</a>
     <a href="https://x.com/huseyinnuman" target="_blank">🐦</a>
   </div>
 
-  <script>
-    function togglePoems() {
-      var list = document.getElementById("poemList");
-      list.style.display = list.style.display === "block" ? "none" : "block";
-    }
-  </script>
+  <!-- Orta başlık -->
+  <div class="title">Derinlerden Gelen Şiirler</div>
+
+  <!-- Alt yazı -->
+  <div class="footer">
+    2025 © H.N.B.
+    <strong>Hüseyin Numan Biber</strong>
+  </div>
 </body>
 </html>
