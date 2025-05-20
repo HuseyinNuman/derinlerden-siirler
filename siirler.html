@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Şiirler - Derinlerden Gelen Şiirler</title>
+  <meta charset="UTF-8">
+  <title>Derinlerden Gelen Şiirler</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #fdf6f0;
       margin: 0;
-      padding: 0;
-      color: #333;
+      padding: 20px;
+      font-family: 'Georgia', serif;
+      background-color: #fff;
+      color: #000;
     }
-    header {
-      text-align: center;
-      padding: 2rem;
-    }
-    main {
+    .container {
       max-width: 800px;
       margin: auto;
-      padding: 1rem;
     }
-    .poem-link {
-      display: block;
-      background-color: #fff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-left: 4px solid #a66;
+    h1 {
+      font-size: 2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    ul li a {
       text-decoration: none;
-      color: #333;
+      color: darkblue;
+      font-weight: bold;
     }
-    .poem-link:hover {
-      background-color: #f0eae4;
+    .button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
       text-align: center;
-      margin-top: 3rem;
-      padding: 1rem;
+      margin-top: 40px;
       font-size: 0.9rem;
-      color: #888;
+      color: gray;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Derinlerden Gelen Şiirler</h1>
-    <p>Hüseyin Numan Biber</p>
-  </header>
-  <main>
-    <a href="sessiz-dualar.html" class="poem-link">📜 Sessiz Dualar</a>
-    <a href="bu-gece.html" class="poem-link">📜 Bu Gece</a>
-    <a href="kalp-susar-siir.html" class="poem-link">📜 Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a>
-    <a href="gonul-boyle-der.html" class="poem-link">📜 Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a>
-    <a href="sadece-sevdim.html" class="poem-link">📜 Sadece Sevdim - Kimene?</a>
-    <a href="umuda-yakin-bir-yangin.html" class="poem-link">📜 Umuda Yakın Bir Yangın</a>
-    <a href="askin-adi.html" class="poem-link">📜 Aşkın Adı</a>
-  </main>
-  <footer>&copy; 2025 Derinlerden H. N. B.</footer>
+  <div class="container">
+    <a class="button" href="index.html">← Ana Sayfa</a>
+    <h1>Şiirler</h1>
+    <ul>
+      <li><a href="#">Sadece Sevdim - Kimene?</a></li>
+      <li><a href="#">Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a></li>
+      <li><a href="#">Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a></li>
+      <li><a href="#">Sessizliğin Gölgesinde</a></li>
+      <li><a href="#">Derinden Gelen Şans</a></li>
+      <li><a href="#">Bu Gece</a></li>
+      <li><a href="#">Sessiz Dualar</a></li>
+      <li><a href="zora-sevdaliyim.html">Zora Sevdalıyım</a></li>
+    </ul>
+
+    <footer>© 2025 Hüseyin Numan Biber</footer>
+  </div>
 </body>
 </html>
