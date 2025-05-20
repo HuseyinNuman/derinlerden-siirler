@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Şiirler</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Georgia', serif;
+      background-image: url('gece-papatya.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 2rem;
+    }
+
+    .poems {
+      margin-top: 40px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      padding: 20px;
+      color: #000;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .poems a {
+      display: block;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    .poems a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Şiirler</h1>
+  <div class="poems">
+    <a href="umuda-yakin-bir-yangin.html">Umuda Yakın Bir Yangın</a>
+    <a href="askin-adi.html">Aşkın Adı</a>
+    <a href="sadece-sevdim.html">Gönül "Sadece Sevdim" Der, Ama Ruh Bazen "Kimene?" Diye Haykırır</a>
+    <a href="gonul-boyle-der.html">Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a>
+    <a href="kalp-susar-siir.html">Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a>
+  </div>
+</body>
+</html>
