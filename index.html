@@ -7,23 +7,28 @@
   <style>
     body {
       font-family: 'Georgia', serif;
-      background-image: url('gece-papatya.jpg');
+      background-image: url('gece-papatya.jpg'); /* senin görselin */
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       margin: 0;
       padding: 0;
       color: #fff;
-    }
-    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       text-align: center;
-      padding: 2rem;
     }
+
     nav {
       position: absolute;
       top: 20px;
       left: 20px;
     }
+
     .nav-button {
       background-color: #fff;
       color: #333;
@@ -34,17 +39,28 @@
       border-radius: 5px;
       text-decoration: none;
     }
+
     .social-links {
       position: absolute;
       top: 20px;
       right: 20px;
     }
+
     .social-links a {
       margin-left: 10px;
       color: #fff;
       text-decoration: none;
       font-size: 1.2rem;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      color: #fdf6f0;
+    }
+
     footer {
       position: absolute;
       bottom: 10px;
@@ -66,9 +82,7 @@
     <a href="https://x.com/huseyinnuman" target="_blank">🐦</a>
   </div>
 
-  <header>
-    <h1></h1>
-  </header>
+  <h1>Derinlerden Gelen Şiirler</h1>
 
   <footer>&copy; 2025 Derinlerden H. N. B.</footer>
 </body>
