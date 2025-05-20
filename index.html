@@ -6,88 +6,103 @@
   <title>Derinlerden Gelen Şiirler</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: 'Georgia', serif;
       background-image: url('gece-papatya.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       color: #fff;
-      margin: 0;
-      padding: 0;
     }
 
-    header {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      padding: 1.5rem;
-      text-align: center;
-      position: relative;
+    .sidebar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
     }
 
-    .social-links {
-      position: absolute;
-      top: 1.2rem;
-      right: 1.5rem;
-    }
-
-    .social-links a {
-      margin-left: 1rem;
-      text-decoration: none;
-      color: #fff;
-      font-size: 1.4rem;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-    }
-
-    .poem-link {
-      display: block;
-      margin-bottom: 1.2rem;
-      padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-left: 4px solid #a66;
-      text-decoration: none;
-      color: #222;
-      transition: background-color 0.3s;
+    .poem-button {
+      background-color: white;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
       border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
     }
 
-    .poem-link:hover {
+    .poem-button:hover {
       background-color: #f0eae4;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #ddd;
+    .poem-list {
+      display: none;
+      margin-top: 15px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .poem-list a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    .poem-list a:hover {
+      text-decoration: underline;
+    }
+
+    .social {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .social a {
+      margin-left: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .poem-button {
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Derinlerden Gelen Şiirler</h1>
-    <p>Kalpten dökülen dizelerle yolculuk</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">📘</a>
-      <a href="https://www.instagram.com/huseyinnuman/" target="_blank">📸</a>
-      <a href="https://x.com/huseyinnuman" target="_blank">𝕏</a>
+  <!-- Sol üstteki şiirler butonu -->
+  <div class="sidebar">
+    <button class="poem-button" onclick="togglePoems()">📜 Şiirler</button>
+    <div class="poem-list" id="poemList">
+      <a href="umuda-yakin-bir-yangin.html">Umuda Yakın Bir Yangın</a>
+      <a href="askin-adi.html">Aşkın Adı</a>
+      <a href="sadece-sevdim.html">Gönül "Sadece Sevdim" Der, Ama Ruh Bazen "Kimene?" Diye Haykırır</a>
+      <a href="gonul-boyle-der.html">Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a>
+      <a href="kalp-susar-siir.html">Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a>
     </div>
-  </header>
-  <main>
-    <a href="umuda-yakin-bir-yangin.html" class="poem-link">📜 Umuda Yakın Bir Yangın</a>
-    <a href="askin-adi.html" class="poem-link">📜 Aşkın Adı</a>
-    <a href="sadece-sevdim.html" class="poem-link">📜 Gönül "Sadece Sevdim" Der, Ama Ruh Bazen "Kimene?" Diye Haykırır</a>
-    <a href="gonul-boyle-der.html" class="poem-link">📜 Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a>
-    <a href="kalp-susar-siir.html" class="poem-link">📜 Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a>
-  </main>
-  <footer>
-    &copy; 2025 Derinlerden H. N. B.
-  </footer>
+  </div>
+
+  <!-- Sağ üstte sosyal medya linkleri -->
+  <div class="social">
+    <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">🌐</a>
+    <a href="https://www.instagram.com/huseyinnuman/" target="_blank">📷</a>
+    <a href="https://x.com/huseyinnuman" target="_blank">🐦</a>
+  </div>
+
+  <script>
+    function togglePoems() {
+      var list = document.getElementById("poemList");
+      list.style.display = list.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
