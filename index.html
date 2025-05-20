@@ -6,84 +6,71 @@
   <title>Derinlerden Gelen Şiirler</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-image: url('gece-papatya.jpg'); /* senin görselin */
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
       margin: 0;
       padding: 0;
-      color: #fff;
+      font-family: 'Georgia', serif;
+      background-image: url('arka-plan.jpg'); /* Papatyalı resmin adı buysa */
+      background-size: cover;
+      background-position: center;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      text-align: center;
+      color: white;
     }
-
-    nav {
+    .header {
       position: absolute;
       top: 20px;
       left: 20px;
     }
-
-    .nav-button {
-      background-color: #fff;
-      color: #333;
-      border: none;
-      padding: 0.7rem 1.2rem;
-      font-size: 1rem;
-      cursor: pointer;
+    .header a {
+      padding: 10px 15px;
+      background-color: white;
+      color: black;
       border-radius: 5px;
       text-decoration: none;
+      font-weight: bold;
     }
-
-    .social-links {
+    .center-text {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000;
     }
-
-    .social-links a {
-      margin-left: 10px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      color: #fdf6f0;
-    }
-
-    footer {
+    .footer {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       width: 100%;
       text-align: center;
-      color: #ccc;
       font-size: 0.9rem;
+      color: white;
+    }
+    .social {
+      margin-top: 8px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="siirler.html" class="nav-button">Şiirler</a>
-  </nav>
-
-  <div class="social-links">
-    <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">📘</a>
-    <a href="https://www.instagram.com/huseyinnuman/" target="_blank">📸</a>
-    <a href="https://x.com/huseyinnuman" target="_blank">🐦</a>
+  <div class="header">
+    <a href="siirler.html">Şiirler</a>
   </div>
 
-  <h1>Derinlerden Gelen Şiirler</h1>
+  <div class="center-text">
+    Derinlerden Gelen Şiirler
+  </div>
 
-  <footer>&copy; 2025 Derinlerden H. N. B.</footer>
+  <div class="footer">
+    © 2025 Derinlerden H. N. B.
+    <div class="social">
+      <a href="https://instagram.com">Instagram</a>
+      <a href="https://twitter.com">Twitter</a>
+      <a href="https://facebook.com">Facebook</a>
+    </div>
+  </div>
 </body>
 </html>
