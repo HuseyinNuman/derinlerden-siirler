@@ -2,94 +2,101 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Derinlerden Gelen Şiirler</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('arka-plan.jpg') no-repeat center center fixed;
+      font-family: 'Georgia', serif;
+      background: url('arka-papatya.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .social-icons a {
-      margin-left: 15px;
-      color: white;
-      font-size: 1.5em;
-      text-decoration: none;
-    }
-
-    main {
+      padding: 40px 20px 20px 20px;
       text-align: center;
-      margin-top: 100px;
     }
 
-    h1 {
-      font-size: 3em;
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
       background-color: rgba(0, 0, 0, 0.6);
       display: inline-block;
-      padding: 20px 40px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .alt-yazi {
+      font-size: 1.2em;
+      margin-top: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 8px 16px;
       border-radius: 10px;
     }
 
     nav {
       position: absolute;
+      top: 20px;
       left: 20px;
-      top: 150px;
     }
 
-    .nav-button {
+    nav a {
       display: block;
-      background-color: white;
-      color: black;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
       margin-bottom: 10px;
       text-decoration: none;
+      background: white;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 140px;
+      text-align: center;
     }
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
+    .social-links {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .social-links a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div></div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">📘</a>
-      <a href="https://www.instagram.com/huseyinnuman" target="_blank">📸</a>
-      <a href="https://x.com/huseyinnuman" target="_blank">🐦</a>
-    </div>
-  </header>
-
   <nav>
-    <a href="siirler.html" class="nav-button">Şiirler</a>
+    <a href="siirler.html">Şiirler</a>
+    <a href="#">Gelecek İçerik</a>
   </nav>
 
-  <main>
-    <h1>Derinlerden Gelen Şiirler</h1>
-  </main>
+  <div class="social-links">
+    <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">
+      <img src="facebook.png" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/huseyinnuman/" target="_blank">
+      <img src="instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://x.com/huseyinnuman" target="_blank">
+      <img src="x.png" alt="X" />
+    </a>
+  </div>
 
-  <footer>
-    2025 © Hüseyin Numan Biber
-  </footer>
+  <header>
+    <h1>Derinlerden Gelen Şiirler</h1>
+    <div class="alt-yazi">Bu satırlar bir papatya gülüşünde huzur bulan kalbin yakısımdır</div>
+  </header>
 </body>
 </html>
