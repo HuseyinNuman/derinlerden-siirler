@@ -1,73 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Şiirler</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Derinlerden Gelen Şiirler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('gece-papatya.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+      background: #fff;
+      color: #333;
     }
-    .container {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
+
+    header {
+      background-color: #fff;
+      padding: 20px;
       text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 40px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px;
-      border-radius: 10px;
+      border-bottom: 2px solid #ccc;
     }
-    ul {
-      list-style-type: none;
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .poem-list {
+      list-style: none;
       padding: 0;
     }
-    li {
-      margin: 20px 0;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 10px;
-      transition: background-color 0.3s;
+
+    .poem-list li {
+      margin: 15px 0;
     }
-    li:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-    a {
-      color: white;
+
+    .poem-list a {
       text-decoration: none;
-      font-size: 1.2em;
+      color: #333;
+      font-size: 18px;
+      padding: 10px 15px;
+      border: 2px solid #333;
+      display: inline-block;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
     }
-    .footer {
+
+    .poem-list a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    footer {
       text-align: center;
-      margin-top: 60px;
-      font-size: 0.9em;
-      opacity: 0.7;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
     <h1>Derinlerden Gelen Şiirler</h1>
-    <ul>
-      <li><a href="siirler/sadece-sevdim.html">Sadece Sevdim - Kimene?</a></li>
-      <li><a href="siirler/gonul-boyle-der.html">Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a></li>
-      <li><a href="siirler/kalp-susar.html">Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a></li>
+  </header>
+
+  <div class="container">
+    <ul class="poem-list">
+      <li><a href="siirler/sadece-sevdim-kimene.html">Sadece Sevdim - Kimene?</a></li>
+      <li><a href="siirler/gonul-boyle-der-ama-ruh-soyle-feryat-eder.html">Gönül Böyle Der Ama Ruh Şöyle Feryat Eder</a></li>
+      <li><a href="siirler/kalp-susar-ama-ruh-sessizlige-dayanamaz.html">Kalp Susar Ama Ruh Sessizliğe Dayanamaz</a></li>
       <li><a href="siirler/sessizligin-golgesinde.html">Sessizliğin Gölgesinde</a></li>
       <li><a href="siirler/derinden-gelen-sans.html">Derinden Gelen Şans</a></li>
       <li><a href="siirler/bu-gece.html">Bu Gece</a></li>
       <li><a href="siirler/sessiz-dualar.html">Sessiz Dualar</a></li>
       <li><a href="siirler/zora-sevdaliyim.html">Zora Sevdalıyım</a></li>
     </ul>
-    <div class="footer">2025 © H. N. B.</div>
   </div>
+
+  <footer>
+    © 2025 Hüseyin Numan Biber
+  </footer>
+
 </body>
 </html>
