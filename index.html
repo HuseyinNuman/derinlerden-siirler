@@ -1,85 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Derinlerden Gelen Şiirler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Marck Script', cursive;
       background-image: url('gece-papatya.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100vh;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      height: 100vh;
+      overflow: hidden;
     }
-
-    h1 {
-      font-size: 3em;
-      margin: 0.2em;
+    .overlay {
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 0.5em 1em;
-      border-radius: 12px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 0.5em 1em;
-      border-radius: 12px;
-    }
-
-    .button-container {
       position: absolute;
-      left: 2em;
-      top: 2em;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
     }
-
-    .btn {
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 120px;
+    }
+    .title {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      display: inline-block;
+      border-radius: 8px;
+    }
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+    }
+    .navbar a {
       background-color: white;
       color: black;
-      padding: 0.5em 1em;
-      margin-bottom: 0.5em;
       text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 6px;
       font-weight: bold;
     }
-
-    .social-links {
+    .social {
       position: absolute;
-      top: 1em;
-      right: 1em;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
     }
-
-    .social-links a {
-      margin-left: 0.5em;
+    .social a {
+      margin-left: 12px;
       color: white;
       text-decoration: none;
-      font-size: 1.5em;
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <a class="btn" href="siirler.html">Şiirler</a>
+  <div class="overlay"></div>
+  <div class="navbar">
+    <a href="siirler.html">Şiirler</a>
   </div>
-
-  <div class="social-links">
+  <div class="social">
     <a href="https://x.com/huseyinnuman" target="_blank">X</a>
-    <!-- Diğer sosyal medya linkleri eklenebilir -->
+    <a href="https://instagram.com/huseyinnuman" target="_blank">Instagram</a>
+    <a href="https://facebook.com/huseyinnuman" target="_blank">Facebook</a>
   </div>
-
-  <h1>Derinlerden Gelen Şiirler</h1>
-  <p>Bu satırlar bir papatya gülüşünde huzur bulan kalbin yakısımdır</p>
+  <div class="content">
+    <div class="title">Derinlerden Gelen Şiirler</div>
+    <div class="subtitle">Bu satırlar bir papatya gülüşünde huzur bulan kalbin yakısımdır</div>
+  </div>
 </body>
 </html>
