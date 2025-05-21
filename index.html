@@ -1,102 +1,86 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derinlerden Gelen Şiirler</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: url('arka-papatya.jpg') no-repeat center center fixed;
+      padding: 0;
+      background-image: url('gece-papatya.jpg');
       background-size: cover;
+      background-position: center;
+      font-family: 'Georgia', serif;
       color: white;
     }
 
-    header {
-      padding: 40px 20px 20px 20px;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      background-color: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
+    .subtitle {
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 600px;
     }
 
-    .alt-yazi {
-      font-size: 1.2em;
-      margin-top: 10px;
-      background-color: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 10px;
-    }
-
-    nav {
+    .button-container {
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 30px;
+      left: 30px;
     }
 
-    nav a {
-      display: block;
-      margin-bottom: 10px;
-      text-decoration: none;
-      background: white;
+    .btn {
+      background-color: white;
       color: black;
-      padding: 10px 15px;
-      border-radius: 8px;
-      font-weight: bold;
-      width: 140px;
-      text-align: center;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
     }
 
     .social-links {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 30px;
     }
 
     .social-links a {
       margin-left: 10px;
-      text-decoration: none;
       color: white;
-      font-size: 1.5em;
-    }
-
-    .social-links img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
+      text-decoration: none;
+      font-size: 24px;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <nav>
-    <a href="siirler.html">Şiirler</a>
-    <a href="#">Gelecek İçerik</a>
-  </nav>
-
-  <div class="social-links">
-    <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank">
-      <img src="facebook.png" alt="Facebook" />
-    </a>
-    <a href="https://www.instagram.com/huseyinnuman/" target="_blank">
-      <img src="instagram.png" alt="Instagram" />
-    </a>
-    <a href="https://x.com/huseyinnuman" target="_blank">
-      <img src="x.png" alt="X" />
-    </a>
+  <div class="overlay">
+    <div class="button-container">
+      <a href="siirler.html" class="btn">Şiirler</a>
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/huseyinnuman.biber" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/huseyinnuman/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/huseyinnuman" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="title">Derinlerden Gelen Şiirler</div>
+    <div class="subtitle">Bu satırlar bir papatya gülüşünde huzur bulan kalbin yakısımdır</div>
   </div>
-
-  <header>
-    <h1>Derinlerden Gelen Şiirler</h1>
-    <div class="alt-yazi">Bu satırlar bir papatya gülüşünde huzur bulan kalbin yakısımdır</div>
-  </header>
 </body>
 </html>
