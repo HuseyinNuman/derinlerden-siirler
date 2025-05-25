@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Görseller</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url('gece-papatya.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(60%);
+      color: white;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .gallery img {
+      margin: 1rem;
+      max-width: 300px;
+      border: 4px solid white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Görseller</h1>
+    <p>Bu sayfa, şiirlerin ruhuna eşlik eden gece ve papatya temalı görseller için hazırlandı.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="gorseller/papatya1.jpg" alt="Papatya">
+    <img src="gorseller/gece1.jpg" alt="Gece Manzarası">
+    <img src="gorseller/papatya2.jpg" alt="Papatya Gülüşü">
+    <img src="gorseller/barajgecesi.jpg" alt="Baraj Gecesi">
+  </div>
+</body>
+</html>
