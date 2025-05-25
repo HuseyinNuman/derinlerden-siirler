@@ -3,61 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Görseller</title>
+  <title>Görseller - Derinlerden Gelen Şiirler</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
+      font-family: Arial, sans-serif;
       background: url('gece-papatya.jpg') no-repeat center center fixed;
       background-size: cover;
-      backdrop-filter: brightness(60%);
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4); /* daha şeffaf yapıldı */
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    h1 {
       color: white;
-    }
-
-    .header {
       text-align: center;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+      font-size: 2.5em;
     }
-
-    .header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 2rem;
+      gap: 20px;
     }
-
     .gallery img {
-      margin: 1rem;
-      max-width: 300px;
-      border: 4px solid white;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-      transition: transform 0.3s ease;
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s;
     }
-
     .gallery img:hover {
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Görseller</h1>
-    <p>Bu sayfa, şiirlerin ruhuna eşlik eden gece ve papatya temalı görseller için hazırlandı.</p>
-  </div>
-
-  <div class="gallery">
-    <img src="gorseller/papatya1.png" alt="Papatya">
-    <img src="gorseller/gece1.png" alt="Gece Manzarası">
-    <img src="gorseller/papatya2.png" alt="Papatya Gülüşü">
-    <img src="gorseller/barajgecesi.png" alt="Baraj Gecesi">
-    <img src="gorseller/sessizlik.png" alt="sessizliğin içinde">
+  <div class="overlay">
+    <h1>Görsel Paylaşımlar</h1>
+    <div class="gallery">
+      <img src="gorseller/papatya1.png" alt="Papatya 1">
+      <img src="gorseller/papatya2.png" alt="Papatya 2">
+      <img src="gorseller/gece1.png" alt="Gece 1">
+      <img src="gorseller/barajgecesi.png" alt="Baraj Gecesi">
+      <img src="gorseller/Sessizlik.png" alt="Sessizlik">
+    </div>
   </div>
 </body>
 </html>
