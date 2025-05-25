@@ -14,14 +14,15 @@
       background-position: center;
       font-family: 'Libre Baskerville', serif;
       color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
       min-height: 100vh;
+      position: relative;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      flex: 1;
+      background-color: rgba(0, 0, 0, 0.45); /* Daha şeffaf yapıldı */
+      position: absolute;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -48,33 +49,38 @@
     }
 
     .button-container {
+      position: absolute;
+      top: 30px;
+      right: 30px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      align-items: center;
+      gap: 15px;
     }
 
     .btn {
-      background-color: #ffffff;
+      background-color: #ffffffdd;
       color: #000000;
       border: none;
-      padding: 12px 28px;
-      font-size: 16px;
+      padding: 10px 24px;
+      font-size: 15px;
       border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
       text-decoration: none;
-      min-width: 180px;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #dddddd;
+      background-color: #ffffffbb;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
 
     .social-icons a {
@@ -94,11 +100,11 @@
     <h1>𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.</h1>
     <h2>Derinlerden Gelen Şiirler</h2>
     <p>Bu satırlar bir papatya gülüşünde huzur bulan kalbin yansımasıdır</p>
+  </div>
 
-    <div class="button-container">
-      <a href="siirler.html" class="btn">Şiirler</a>
-      <a href="gorseller.html" class="btn">Görseller</a>
-    </div>
+  <div class="button-container">
+    <a href="siirler.html" class="btn">Şiirler</a>
+    <a href="gorseller.html" class="btn">Görseller</a>
   </div>
 
   <footer>
