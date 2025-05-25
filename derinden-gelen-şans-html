@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derinden Gelen Şans</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("../gorseller/gece-papatya.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      font-family: 'Georgia', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      backdrop-filter: brightness(0.6);
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 800px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      white-space: pre-line;
+    }
+    .imza {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Derinden Gelen Şans</h1>
+    <p>
+Şans insana bir kere gelir,
+Derinden ve üzücü bir sessizlikle.
+Yaşarsın içinde büyüyen aşkı,
+Senin için geleni, umutla...
+
+İnsan şansa inanmalı mı gerçekten?
+Senin bana gelişin gibi —
+Sessizce, sarsmadan,
+Ama ruhuma kök salarak derinden.
+
+Şans bazen acı bir umutla uğrar,
+En beklenmedik anda gider…
+Sevda da aynıdır aslında,
+Gelir ve bir daha dönmez.
+
+Sen bana en beklemediğim anda geldin,
+Gamzeli bir tebessümle,
+Papatyaların prensesi gibi.
+Ve ben —
+Seninle yıkılmadan duran bir ağaçtım.
+İçten içe kırılmış, ama hâlâ dimdik…
+    </p>
+    <div class="imza">𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 𝘏. 𝘕. 𝘉.</div>
+  </div>
+</body>
+</html>
