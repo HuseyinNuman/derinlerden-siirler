@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('../gece-papatya.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Open Sans', sans-serif;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      margin: 40px auto;
+      max-width: 800px;
+      border-radius: 20px;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    .imza {
+      text-align: right;
+      font-style: italic;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sen</h1>
+
+    <p>Sen, hayallerimin ötesinde yaşayan gözlerde saklı bir roman;<br>
+    Dilden dile dolaşan bir destan gibisin.<br>
+    Belki de hiç ulaşamayacağım bir zirve...</p>
+
+    <p>Kalbime uğrayan bir ışık,<br>
+    İçimde doğan bir nur süzmesi…<br>
+    Ve belki de o ışıktan hiç ayrılmayan tek iz…</p>
+
+    <p>Sen ki, ay parçası gibi parlayan gözlerinle<br>
+    Dünyamı aydınlatan,<br>
+    Güneşin bile sönük kaldığı bir zarafetsin.<br>
+    Bakmaya kıyamadığım,<br>
+    Kalbimin tek sahibi…</p>
+
+    <p>Yaşamak ne güzel derler ya —<br>
+    İşte o yaşamın kaynağısın sen.<br>
+    Uçsuz bucaksız bir okyanus gibi;<br>
+    Hem korkutan derinliğinle,<br>
+    Hem içine girmeyi en çok istediğim güvenliğinle…</p>
+
+    <p>Gönlünde bana bir yer var mı acaba?<br>
+    Çünkü ben kimseyi, seni sevdiğim kadar sevmedim.<br>
+    Sen benim en büyük korkum,<br>
+    Ve en büyük umudumsun.<br>
+    Rüyalarıma gelmeni beklediğim sessiz bir dua…</p>
+
+    <p>Cemre gibi düştün gönlüme,<br>
+    Filiz verdin kurak topraklarıma.<br>
+    Ve o günden beri,<br>
+    Aklıma gelen en güzel,<br>
+    Ve en yakıcı his sensin.</p>
+
+    <p>En kötü anlarımda bile aklımdasın,<br>
+    O yüzden...<br>
+    Eğer “kötü” olacaksan,<br>
+    Kalbimden hiç çıkma.</p>
+
+    <p>Gözlerin gözümün önünde kalsın bu gece.<br>
+    İyi geceler, kalbimin en derin yerinde sakladığım <strong>sen</strong>...</p>
+
+    <div class="imza">
+      𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 𝘏. 𝘕. 𝘉.
+    </div>
+  </div>
+</body>
+</html>
