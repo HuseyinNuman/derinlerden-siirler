@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zor Olanı Sevdim</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f9f9f9;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      padding: 40px 20px;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+    }
+    h1 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    p {
+      line-height: 1.7;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .imza {
+      margin-top: 40px;
+      text-align: right;
+      font-style: italic;
+      font-size: 17px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Zor Olanı Sevdim</h1>
+
+    <p>Bazen kolay olanı sever insan,<br/>
+    Ulaşılabilir olanı,<br/>
+    Basit olanı…<br/>
+    Hiç zorluk çekmeden,<br/>
+    Acısını bilmeden zor olanın.</p>
+
+    <p>Ama ben,<br/>
+    Zor olanı sevdim her zaman.<br/>
+    Yaklaşmaya korktuğum,<br/>
+    Hatta<br/>
+    Bakmaya bile çekindiğim…</p>
+
+    <p>Zor olan<br/>
+    Bana her daim cazip geldi:<br/>
+    Ulaşılamaz,<br/>
+    Ama bir o kadar da çekici.</p>
+
+    <p>Ben zor olanın gözlerini sevdim—<br/>
+    Bir defa gördüğüm,<br/>
+    Ve bakmaya dahi korktuğum…<br/>
+    Bir tek gülümsemesiyle<br/>
+    Beni benden alan,<br/>
+    Tüm duygularımı susturan...</p>
+
+    <p>Onun gözlerine bakamadan<br/>
+    Ve saçlarının kokusunu<br/>
+    İçime çekemeden sevdim.<br/>
+    Çünkü o zordu…<br/>
+    Ama asla imkânsız değildi<br/>
+    Benim için.</p>
+
+    <p>Ben zor olanı sevdim,<br/>
+    Çünkü o aşktı.<br/>
+    Ve aşk—<br/>
+    İmkânsız olanı dahi başarmaktı.</p>
+
+    <div class="imza">𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.</div>
+  </div>
+</body>
+</html>
