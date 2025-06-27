@@ -19,7 +19,7 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.45); /* Daha şeffaf yapıldı */
+      background-color: rgba(0, 0, 0, 0.45);
       position: absolute;
       top: 0; left: 0;
       right: 0; bottom: 0;
@@ -48,13 +48,22 @@
       margin-bottom: 40px;
     }
 
-    .button-container {
+    .button-container-right,
+    .button-container-left {
       position: absolute;
-      top: 30px;
-      right: 30px;
       display: flex;
       flex-direction: column;
       gap: 15px;
+    }
+
+    .button-container-right {
+      top: 30px;
+      right: 30px;
+    }
+
+    .button-container-left {
+      top: 30px;
+      left: 30px;
     }
 
     .btn {
@@ -102,10 +111,16 @@
     <p>Bu satırlar bir papatya gülüşünde huzur bulan kalbin yansımasıdır</p>
   </div>
 
-  <div class="button-container">
-    <a href="siirler.html" class="btn">Şiirler</a>
-    <a href="siirler2.html" class="btn">şiirler 2</a>
+  <!-- Sol taraftaki butonlar -->
+  <div class="button-container-left">
     <a href="gorseller.html" class="btn">Görseller</a>
+    <a href="misafir-siirler.html" class="btn">Kıymetli Kalemler</a>
+  </div>
+
+  <!-- Sağ taraftaki butonlar -->
+  <div class="button-container-right">
+    <a href="siirler.html" class="btn">Şiirler</a>
+    <a href="siirler2.html" class="btn">Şiirler 2</a>
     <a href="sozler.html" class="btn">Sözler</a>
   </div>
 
@@ -119,3 +134,4 @@
   </footer>
 </body>
 </html>
+
