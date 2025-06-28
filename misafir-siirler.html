@@ -1,105 +1,74 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kıymetli Kalemler - Misafir Şiirleri</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kıymetli Kalemler</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url("gece-papatya.jpg");
+      background-image: url("arkaplan.jpg");
       background-size: cover;
       background-position: center;
       font-family: 'Libre Baskerville', serif;
-      color: #fff;
+      color: #f5f5f5;
       min-height: 100vh;
       position: relative;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 20px 100px;
-      max-width: 900px;
-      margin: auto;
+      background-color: rgba(0, 0, 0, 0.65);
+      position: absolute;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
     }
 
     h1 {
       font-size: 36px;
-      text-align: center;
       margin-bottom: 10px;
     }
 
     h2 {
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 40px;
-      color: #ccc;
+      font-size: 24px;
+      margin: 10px 0;
+      color: #eeeeee;
     }
 
-    .poem {
-      margin-bottom: 50px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.07);
-      border-radius: 12px;
-    }
-
-    .poem-title {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #ffd;
-      text-align: center;
-    }
-
-    .poem-content {
-      white-space: pre-wrap;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .author {
-      margin-top: 20px;
-      text-align: right;
-      font-style: italic;
-      color: #ccc;
-    }
-
-    .back-btn {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background-color: #ffffffcc;
-      color: #000;
-      padding: 8px 18px;
-      border-radius: 8px;
+    .poem-link {
+      display: block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #f5f5f5;
       text-decoration: none;
-      font-size: 15px;
-      transition: background-color 0.3s ease;
+      font-size: 18px;
+      border: 1px solid #999;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      width: fit-content;
     }
 
-    .back-btn:hover {
-      background-color: #ffffffaa;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.75);
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+    .poem-link:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border-color: #fff;
     }
   </style>
 </head>
 <body>
-  <a href="index.html" class="back-btn">← Ana Sayfa</a>
-
   <div class="overlay">
     <h1>Kıymetli Kalemler</h1>
     <h2>Dost kalemlerden gelen şiirler burada yer alacak.</h2>
 
-    <a href="misafir/bir-hic-ugruna.html" class="btn">Bir Hiç Uğruna</a>
+    <a href="misafir/siir-bir-hic-ugruna.html" class="poem-link">📜 Bir Hiç Uğruna </a>
 
   </div>
 
