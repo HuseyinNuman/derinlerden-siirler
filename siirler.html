@@ -4,111 +4,162 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Şiirler</title>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-image: url('gece-papatya.jpg');
+      margin: 0;
+      padding: 0 0 100px;
+      background-image: url("gece-papatya.jpg");
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
-      color: white;
-      font-family: 'Crimson Pro', serif;
+      font-family: 'Libre Baskerville', serif;
+      color: #f5f5f5;
+      min-height: 100vh;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 40px;
+      color: #eeeeee;
+    }
+
+    .poem-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .poem-link {
+      display: block;
+      width: 100%;
+      padding: 12px 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #f5f5f5;
+      text-decoration: none;
+      font-size: 18px;
+      border: 1px solid #999;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .poem-link:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .back-link {
+      margin-top: 50px;
+      font-size: 16px;
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: #fff;
+    }
+
+    footer {
       text-align: center;
       padding: 20px;
-    }
-    h1 {
-      margin-bottom: 40px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 40px;
-      font-style: italic;
-      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.75);
     }
   </style>
 </head>
+
 <body>
-  <h1>Şiirler</h1>
-  <ul>
-    <li><a href="ask-ile-gelen-nur.html">Aşk ile Gelen Nur</a></li>
-    <li><a href="askin-adi.html">Aşkın Adı</a></li>
-    <li><a href="bu-gece.html">Bu Gece</a></li>
-    <li><a href="gonul-boyle-der.html">Gönül Böyle Der</a></li>
-    <li><a href="kalp-susar.html">Kalp Susar</a></li>
-    <li><a href="sadece-benim-anlayacagim-kadar.html">Sadece Benim Anlayacağım Kadar</a></li>
-    <li><a href="sadece-sevdim.html">Sadece Sevdim</a></li>
-    <li><a href="sana-dogru.html">Sana Doğru</a></li>
-    <li><a href="sessiz-dualar.html">Sessiz Dualar</a></li>
-    <li><a href="umuda-yakin-bir-yangin.html">Umuda Yakın Bir Yangın</a></li>
-    <li><a href="zora-sevdaliyim.html">Zora Sevdalıyım</a></li>
-    <li><a href="bir-dunya-iki-insan.html">Bir Dünya İki İnsan</a></li>
-    <li><a href="karanlikta-dogmak.html">Bölüm 1: Karanlıkta Doğmak</a></li>
-    <li><a href="aydinligin-bekleyisi.html">Bölüm 2: Aydınlığın Bekleyişi</a></li>
-    <li><a href="sessizligin-golgesinde.html">Bölüm 3: Sessizliğin Gölgesinde</a></li>
-    <li><a href="sen.html">Sen</a></li>
-    <li><a href="derinden-gelen-sans.html">Derinden Gelen Şans</a></li>
-    <li><a href="eger-son-sozumu-sorsaydin.html">Eğer Son Sözümü Sorsaydın</a></li>
-    <li><a href="sessiz-ve-hizli.html">Sessiz ve Hızlı</a></li>
-    <li><a href="sessizligin-umudu.html">Sessizliğin İçinde Büyüyen Umut</a></li>
-    <li><a href="sen-geldin.html">Sen Geldin</a></li>
-    <li><a href="yildizlar-ve-sen.html">Yıldızlar ve Sen</a></li>
-    <li><a href="sessiz-umutlar.html">Sessiz Umutlar</a></li>
-    <li><a href="gozler-ve-kalp.html">Gözler ve Kalp</a></li>
-    <li><a href="bir_insan_bir_melek_bir_seytan.html">Bir İnsan Bir Melek Bir Şeytan</a></li>
-    <li><a href="ayni_dalda_ayri_renkler.html">Aynı Dalda Ayrı Renkler</a></li>
-    <li><a href="bir-ada-dusun.html">Bir Ada Düşün</a></li>
-    <li><a href="sen-benim-mucizemsin.html">Sen Benim Mucizemsin</a></li>
-    <li><a href="benim-dunyam.html">Benim Dünyam</a></li>
-    <li><a href="karanliga-dogan-gunes.html">Karanlığa Doğan Güneş</a></li>
-    <li><a href="mevsimlerin-en-guzeli.html">Mevsimlerin En Güzeli</a></li>
-    <li><a href="magaradaki-isik.html">Mağaradaki Işık</a></li>
-    <li><a href="ben-karanlikta-yasayan-adam.html">Ben Karanlıkta Yaşayan Adam</a></li>
-    <li><a href="karanliga-karsi.html">Karanlığa Karşı</a></li>
-    <li><a href="ben-yasamiyorum.html">Ben Yaşamıyorum</a></li>
-    <li><a href="gunes-bile-kiskanıyor.html">Güneş Bile Kıskanıyor Seni</a></li>
-    <li><a href="zor-olanı-sevdim.html">Zor Olanı Sevdim</a></li>
-    <li><a href="hic-olmayan-kardesime.html">Hiç Olmayan Kardeşime</a></li>
-    <li><a href="duvarin-otesinde.html">Duvarın Ötesinde</a></li>
-    <li><a href="masumun-korkusu.html">Masumun Korkusu</a></li>
-    <li><a href="sensizligin-kiyisinda.html">Sessizliğin Kıyısında</a></li>
-    <li><a href="gozlerinle-geldi-gece.html">Gözlerinle Geldi Gece</a></li>
-    <li><a href="gonlume-dogan-gunes.html">Gönlüme Doğan Güneş</a></li>
-    <li><a href="bir-kelimeyle-baslayan-sonsuzluk.html">Bir Kelimeyle Başlayan Sonsuzluk</a></li>
-    <li><a href="ucsuz-bozkirda-senin-icin.html">Uçsuz Bozkırda Senin İçin</a></li>
-    <li><a href="sigindigim-liman.html">Sığındığım Liman</a></li>
-    <li><a href="sakin-bir-hayatti-bizimki.html">Sakin Bir Hayattı Bizimki</a></li>
-    <li><a href="en-cok-seni-unutmaktan-korkuyorum.html">En Çok Seni Unutmaktan Korkuyorum</a></li>
-    <li><a href="sen-varsan.html">Sen Varsan</a></li>
-    <li><a href="gozyasimdan-acan-cicekler.html">Gözyaşımdan Açan Çiçekler</a></li>
-    <li><a href="sadece-seninle.html">Sadece Seninle</a></li>
-    <li><a href="bir-kus-gibi.html">Bir Kuş Gibi Geldim Sana</a></li>
-    <li><a href="kahve-gibi-sevmek.html">Kahve Gibi Sevmek</a></li>
-    <li><a href="unutmuyorum.html">Unutmuyorum</a></li>
-    <li><a href="nur-gecesi.html">Nur Gecesi</a></li>
-    <li><a href="sessizce-bekliyorum.html">Sessizce Bekliyorum</a></li>
-    <li><a href="gece-bana-dusman.html">Gece Bana Düşman</a></li>
-    <li><a href="sessız-bır-bekleyıs.html">Sessiz Bir Bekleyiş</a></li>
-    <li><a href="ben-senı-sevdım.html">Ben Seni Sevdim</a></li>
-    <li><a href="sende-saklı-bır-sevda.html">Sende Saklı Bir Sevda</a></li>
-  </ul>
+  <div class="overlay">
+    <h1>Şiirler</h1>
+    <h2>Derinlerden gelen dizeler</h2>
+
+    <div class="poem-list">
+      <a href="ask-ile-gelen-nur.html" class="poem-link">📜 Aşk ile Gelen Nur</a>
+      <a href="askin-adi.html" class="poem-link">📜 Aşkın Adı</a>
+      <a href="bu-gece.html" class="poem-link">📜 Bu Gece</a>
+      <a href="gonul-boyle-der.html" class="poem-link">📜 Gönül Böyle Der</a>
+      <a href="kalp-susar.html" class="poem-link">📜 Kalp Susar</a>
+      <a href="sadece-benim-anlayacagim-kadar.html" class="poem-link">📜 Sadece Benim Anlayacağım Kadar</a>
+      <a href="sadece-sevdim.html" class="poem-link">📜 Sadece Sevdim</a>
+      <a href="sana-dogru.html" class="poem-link">📜 Sana Doğru</a>
+      <a href="sessiz-dualar.html" class="poem-link">📜 Sessiz Dualar</a>
+      <a href="umuda-yakin-bir-yangin.html" class="poem-link">📜 Umuda Yakın Bir Yangın</a>
+      <a href="zora-sevdaliyim.html" class="poem-link">📜 Zora Sevdalıyım</a>
+      <a href="bir-dunya-iki-insan.html" class="poem-link">📜 Bir Dünya İki İnsan</a>
+      <a href="karanlikta-dogmak.html" class="poem-link">📜 Bölüm 1: Karanlıkta Doğmak</a>
+      <a href="aydinligin-bekleyisi.html" class="poem-link">📜 Bölüm 2: Aydınlığın Bekleyişi</a>
+      <a href="sessizligin-golgesinde.html" class="poem-link">📜 Bölüm 3: Sessizliğin Gölgesinde</a>
+      <a href="sen.html" class="poem-link">📜 Sen</a>
+      <a href="derinden-gelen-sans.html" class="poem-link">📜 Derinden Gelen Şans</a>
+      <a href="eger-son-sozumu-sorsaydin.html" class="poem-link">📜 Eğer Son Sözümü Sorsaydın</a>
+      <a href="sessiz-ve-hizli.html" class="poem-link">📜 Sessiz ve Hızlı</a>
+      <a href="sessizligin-umudu.html" class="poem-link">📜 Sessizliğin İçinde Büyüyen Umut</a>
+      <a href="sen-geldin.html" class="poem-link">📜 Sen Geldin</a>
+      <a href="yildizlar-ve-sen.html" class="poem-link">📜 Yıldızlar ve Sen</a>
+      <a href="sessiz-umutlar.html" class="poem-link">📜 Sessiz Umutlar</a>
+      <a href="gozler-ve-kalp.html" class="poem-link">📜 Gözler ve Kalp</a>
+      <a href="bir_insan_bir_melek_bir_seytan.html" class="poem-link">📜 Bir İnsan Bir Melek Bir Şeytan</a>
+      <a href="ayni_dalda_ayri_renkler.html" class="poem-link">📜 Aynı Dalda Ayrı Renkler</a>
+      <a href="bir-ada-dusun.html" class="poem-link">📜 Bir Ada Düşün</a>
+      <a href="sen-benim-mucizemsin.html" class="poem-link">📜 Sen Benim Mucizemsin</a>
+      <a href="benim-dunyam.html" class="poem-link">📜 Benim Dünyam</a>
+      <a href="karanliga-dogan-gunes.html" class="poem-link">📜 Karanlığa Doğan Güneş</a>
+      <a href="mevsimlerin-en-guzeli.html" class="poem-link">📜 Mevsimlerin En Güzeli</a>
+      <a href="magaradaki-isik.html" class="poem-link">📜 Mağaradaki Işık</a>
+      <a href="ben-karanlikta-yasayan-adam.html" class="poem-link">📜 Ben Karanlıkta Yaşayan Adam</a>
+      <a href="karanliga-karsi.html" class="poem-link">📜 Karanlığa Karşı</a>
+      <a href="ben-yasamiyorum.html" class="poem-link">📜 Ben Yaşamıyorum</a>
+      <a href="gunes-bile-kiskanıyor.html" class="poem-link">📜 Güneş Bile Kıskanıyor Seni</a>
+      <a href="zor-olanı-sevdim.html" class="poem-link">📜 Zor Olanı Sevdim</a>
+      <a href="hic-olmayan-kardesime.html" class="poem-link">📜 Hiç Olmayan Kardeşime</a>
+      <a href="duvarin-otesinde.html" class="poem-link">📜 Duvarın Ötesinde</a>
+      <a href="masumun-korkusu.html" class="poem-link">📜 Masumun Korkusu</a>
+      <a href="sensizligin-kiyisinda.html" class="poem-link">📜 Sessizliğin Kıyısında</a>
+      <a href="gozlerinle-geldi-gece.html" class="poem-link">📜 Gözlerinle Geldi Gece</a>
+      <a href="gonlume-dogan-gunes.html" class="poem-link">📜 Gönlüme Doğan Güneş</a>
+      <a href="bir-kelimeyle-baslayan-sonsuzluk.html" class="poem-link">📜 Bir Kelimeyle Başlayan Sonsuzluk</a>
+      <a href="ucsuz-bozkirda-senin-icin.html" class="poem-link">📜 Uçsuz Bozkırda Senin İçin</a>
+      <a href="sigindigim-liman.html" class="poem-link">📜 Sığındığım Liman</a>
+      <a href="sakin-bir-hayatti-bizimki.html" class="poem-link">📜 Sakin Bir Hayattı Bizimki</a>
+      <a href="en-cok-seni-unutmaktan-korkuyorum.html" class="poem-link">📜 En Çok Seni Unutmaktan Korkuyorum</a>
+      <a href="sen-varsan.html" class="poem-link">📜 Sen Varsan</a>
+      <a href="gozyasimdan-acan-cicekler.html" class="poem-link">📜 Gözyaşımdan Açan Çiçekler</a>
+      <a href="sadece-seninle.html" class="poem-link">📜 Sadece Seninle</a>
+      <a href="bir-kus-gibi.html" class="poem-link">📜 Bir Kuş Gibi Geldim Sana</a>
+      <a href="kahve-gibi-sevmek.html" class="poem-link">📜 Kahve Gibi Sevmek</a>
+      <a href="unutmuyorum.html" class="poem-link">📜 Unutmuyorum</a>
+      <a href="nur-gecesi.html" class="poem-link">📜 Nur Gecesi</a>
+      <a href="sessizce-bekliyorum.html" class="poem-link">📜 Sessizce Bekliyorum</a>
+      <a href="gece-bana-dusman.html" class="poem-link">📜 Gece Bana Düşman</a>
+      <a href="sessız-bır-bekleyıs.html" class="poem-link">📜 Sessiz Bir Bekleyiş</a>
+      <a href="ben-senı-sevdım.html" class="poem-link">📜 Ben Seni Sevdim</a>
+      <a href="sende-saklı-bır-sevda.html" class="poem-link">📜 Sende Saklı Bir Sevda</a>
+    </div>
+
+    <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+  </div>
 
   <footer>
-    𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.
+    <p>© 2025 Şiirler | 𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.</p>
   </footer>
 </body>
 </html>
+
 
