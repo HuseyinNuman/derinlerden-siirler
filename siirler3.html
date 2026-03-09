@@ -1,125 +1,195 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Şiirler 3</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Şiirler 3</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0 0 100px;
-      background-image: url("gece-papatya.jpg");
-      background-size: cover;
-      background-position: center;
-      font-family: 'Libre Baskerville', serif;
-      color: #f5f5f5;
-      min-height: 100vh;
-    }
+<style>
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.65);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 60px 20px;
-    }
+body{
+margin:0;
+padding:0;
+background-image:url("gece-papatya.jpg");
+background-size:cover;
+background-position:center;
+font-family:'Libre Baskerville',serif;
+color:#f5f5f5;
+min-height:100vh;
+}
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+/* KAPAK */
 
-    h2 {
-      font-size: 22px;
-      margin-bottom: 40px;
-      color: #eeeeee;
-    }
+.cover{
+height:100vh;
+background:rgba(0,0,0,0.65);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-    .coming-soon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      font-size: 20px;
-      font-style: italic;
-      color: #dddddd;
-      border: 1px dashed #aaa;
-      padding: 30px;
-      border-radius: 12px;
-      background-color: rgba(255, 255, 255, 0.05);
-      max-width: 500px;
-      width: 100%;
-    }
+.cover h1{
+font-size:48px;
+letter-spacing:4px;
+margin-bottom:15px;
+}
 
-    .poem-link {
-      display: block;
-      width: 100%;
-      max-width: 320px;
-      text-align: center;
-      padding: 12px 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      color: #f5f5f5;
-      text-decoration: none;
-      font-size: 18px;
-      border: 1px solid #999;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
+.subtitle{
+font-size:20px;
+color:#ddd;
+margin-bottom:20px;
+}
 
-    .poem-link:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-      color: #ffffff;
-      border-color: #ffffff;
-    }
+.author{
+font-size:18px;
+font-style:italic;
+margin-bottom:40px;
+}
 
-    .back-link {
-      margin-top: 50px;
-      font-size: 16px;
-      color: #ccc;
-      text-decoration: none;
-    }
+.start-btn{
+padding:12px 28px;
+border:1px solid #fff;
+text-decoration:none;
+color:#fff;
+transition:0.3s;
+border-radius:8px;
+}
 
-    .back-link:hover {
-      color: #fff;
-    }
+.start-btn:hover{
+background:white;
+color:black;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.75);
-    }
-  </style>
+/* ŞİİR LİSTESİ */
+
+.overlay{
+background-color:rgba(0,0,0,0.65);
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:60px 20px 100px;
+}
+
+h2{
+font-size:28px;
+margin-bottom:40px;
+color:#eeeeee;
+}
+
+.coming-soon{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+font-size:20px;
+font-style:italic;
+color:#dddddd;
+border:1px dashed #aaa;
+padding:30px;
+border-radius:12px;
+background-color:rgba(255,255,255,0.05);
+max-width:500px;
+width:100%;
+}
+
+.poem-link{
+display:block;
+width:100%;
+max-width:320px;
+text-align:center;
+padding:12px 20px;
+background-color:rgba(255,255,255,0.05);
+color:#f5f5f5;
+text-decoration:none;
+font-size:18px;
+border:1px solid #999;
+border-radius:10px;
+transition:all 0.3s ease;
+}
+
+.poem-link:hover{
+background-color:rgba(255,255,255,0.15);
+color:#ffffff;
+border-color:#ffffff;
+}
+
+.back-link{
+margin-top:50px;
+font-size:16px;
+color:#ccc;
+text-decoration:none;
+}
+
+.back-link:hover{
+color:#fff;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background-color:rgba(0,0,0,0.75);
+}
+
+</style>
 </head>
 
 <body>
-  <div class="overlay">
-    <h1>Şiirler 3</h1>
-    <h2>Derinlerden gelen dizeler</h2>
 
-    <div class="coming-soon">
-      <a href="siirler3/zalimin-hukmu.html" class="poem-link">📜 Zalimin Hükmü</a>
-      <a href="siirler3/kuyu.html" class="poem-link">📜 Kuyu</a>
-      <a href="siirler3/bir-buket-gul-gibi.html" class="poem-link">📜 Bir Buket Gül Gibi</a>
-      <a href="siirler3/kirik-aynalarin-kiyisinda.html" class="poem-link">📜 Kırık Aynaların Kıyısında</a>
-      <a href="siirler3/gecenin-en-karasinda.html" class="poem-link">📜 Gecenin En Karasında</a>
-      <a href="siirler3/sadece-bir-hayaldi.html" class="poem-link">📜 Sadece Bir Hayaldi</a>
-      <a href="siirler3/zamanin-golgesinde.html" class="poem-link">📜 Zamanın Gölgesinde</a>
-      <a href="siirler3/bir-tek-sende-olan-huzur.html" class="poem-link">📜 Bir Tek Sende Olan Huzur</a>
-      <a href="siirler3/gunes-ile-yasayan-sevgi.html" class="poem-link">📜 Güneş ile Yaşayan Sevgi</a>
-      <a href="siirler3/yazi-beklerken.html" class="poem-link">📜 Yazı Beklerken</a>
-      <a href="siirler3/ince-cizgi.html" class="poem-link">📜 İnce Çizgi</a>
+<!-- KAPAK -->
 
-    </div>
+<div class="cover">
 
-    <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
-  </div>
+<h1>ŞİİRLER 3</h1>
 
-  <footer>
-    <p>© 2026 Şiirler 3 | 𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.</p>
-  </footer>
+<p class="subtitle">
+Sessizliğin İçinden
+</p>
+
+<p class="author">
+Derinlerden<br>
+H. N. B.
+</p>
+
+<a href="#poems" class="start-btn">
+Şiirleri Oku ↓
+</a>
+
+</div>
+
+<!-- ŞİİR LİSTESİ -->
+
+<div id="poems" class="overlay">
+
+<h2>Derinlerden gelen dizeler</h2>
+
+<div class="coming-soon">
+
+<a href="siirler3/zalimin-hukmu.html" class="poem-link">📜 Zalimin Hükmü</a>
+<a href="siirler3/kuyu.html" class="poem-link">📜 Kuyu</a>
+<a href="siirler3/bir-buket-gul-gibi.html" class="poem-link">📜 Bir Buket Gül Gibi</a>
+<a href="siirler3/kirik-aynalarin-kiyisinda.html" class="poem-link">📜 Kırık Aynaların Kıyısında</a>
+<a href="siirler3/gecenin-en-karasinda.html" class="poem-link">📜 Gecenin En Karasında</a>
+<a href="siirler3/sadece-bir-hayaldi.html" class="poem-link">📜 Sadece Bir Hayaldi</a>
+<a href="siirler3/zamanin-golgesinde.html" class="poem-link">📜 Zamanın Gölgesinde</a>
+<a href="siirler3/bir-tek-sende-olan-huzur.html" class="poem-link">📜 Bir Tek Sende Olan Huzur</a>
+<a href="siirler3/gunes-ile-yasayan-sevgi.html" class="poem-link">📜 Güneş ile Yaşayan Sevgi</a>
+<a href="siirler3/yazi-beklerken.html" class="poem-link">📜 Yazı Beklerken</a>
+<a href="siirler3/ince-cizgi.html" class="poem-link">📜 İnce Çizgi</a>
+
+</div>
+
+<a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+
+</div>
+
+<footer>
+<p>© 2026 Şiirler 3 | 𝘋𝘦𝘳𝘪𝘯𝘭𝘦𝘳𝘥𝘦𝘯 H. N. B.</p>
+</footer>
+
 </body>
 </html>
